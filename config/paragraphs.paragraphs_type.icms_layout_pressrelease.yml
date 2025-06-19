@@ -7,7 +7,7 @@ id: icms_layout_pressrelease
 label: 'Press release'
 icon_uuid: null
 icon_default: null
-description: 'The <em>Press release</em> is a set of functionalities and data structures that allows you to capture topic contributions, which can be supplemented based on structured data. '
+description: 'The <em>Press release</em> is a set of functionalities and data structures that allows you to capture topic contributions, which can be supplemented based on structured data.'
 behavior_plugins:
   paragraphs_blokkli_data:
     enabled: true

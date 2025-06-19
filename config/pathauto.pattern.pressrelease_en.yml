@@ -9,10 +9,10 @@ label: 'Press release (EN)'
 type: 'canonical_entities:node'
 pattern: '/press-releases/[node:title]'
 selection_criteria:
-  cc832cfe-a133-4bc4-85c1-6a333edc753f:
+  fa234571-66a8-4c3e-99b2-831e3d09df53:
     id: 'entity_bundle:node'
     negate: false
-    uuid: cc832cfe-a133-4bc4-85c1-6a333edc753f
+    uuid: fa234571-66a8-4c3e-99b2-831e3d09df53
     context_mapping:
       node: node
     bundles:
