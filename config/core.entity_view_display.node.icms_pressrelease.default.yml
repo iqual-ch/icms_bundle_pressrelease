@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_display.comment.blokkli_node.default
     - field.field.node.icms_pressrelease.body
     - field.field.node.icms_pressrelease.field_blokkli_comments
+    - field.field.node.icms_pressrelease.field_icms_image
     - field.field.node.icms_pressrelease.field_icms_paragraphs
     - field.field.node.icms_pressrelease.field_icms_teaser_image
     - field.field.node.icms_pressrelease.field_icms_teaser_link_label
@@ -45,6 +46,15 @@ content:
       pager_id: 0
     third_party_settings: {  }
     weight: 108
+    region: content
+  field_icms_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 110
     region: content
   field_icms_paragraphs:
     type: entity_reference_revisions_entity_view

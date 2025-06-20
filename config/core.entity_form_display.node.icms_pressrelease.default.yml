@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.icms_pressrelease.body
     - field.field.node.icms_pressrelease.field_blokkli_comments
+    - field.field.node.icms_pressrelease.field_icms_image
     - field.field.node.icms_pressrelease.field_icms_paragraphs
     - field.field.node.icms_pressrelease.field_icms_teaser_image
     - field.field.node.icms_pressrelease.field_icms_teaser_link_label
@@ -53,6 +54,7 @@ third_party_settings:
         - title
         - body
         - field_icms_topics
+        - field_icms_image
         - group_teaser
       label: 'Meta Information'
       region: content
@@ -155,6 +157,13 @@ content:
     weight: 6
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_icms_image:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_icms_paragraphs:
     type: paragraphs
