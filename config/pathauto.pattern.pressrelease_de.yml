@@ -7,7 +7,7 @@ dependencies:
 id: pressrelease_de
 label: 'Press release (DE)'
 type: 'canonical_entities:node'
-pattern: '/pressemitteilung/[node:title]'
+pattern: '/pressemitteilungen/[node:title]'
 selection_criteria:
   9f8c8dea-3f63-4c0e-b8ec-7f63aacdc5e6:
     id: 'entity_bundle:node'
