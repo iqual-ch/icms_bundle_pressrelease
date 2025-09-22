@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: icms_pressrelease_fr
+label: 'Press release (FR)'
+type: 'canonical_entities:node'
+pattern: '/communiques-de-presse/[node:title]'
+selection_criteria:
+  869098df-a8c5-4087-b14f-f7a6654855bf:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 869098df-a8c5-4087-b14f-f7a6654855bf
+    context_mapping:
+      node: node
+    bundles:
+      icms_pressrelease: icms_pressrelease
+  e1e6cb71-57d7-4697-93ce-10ece89a725a:
+    id: language
+    negate: false
+    uuid: e1e6cb71-57d7-4697-93ce-10ece89a725a
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      fr: fr
+selection_logic: and
+weight: 1
+relationships:
+  'node:langcode:language':
+    label: Language

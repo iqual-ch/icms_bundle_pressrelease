@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: icms_pressrelease_it
+label: 'Press release (IT)'
+type: 'canonical_entities:node'
+pattern: '/comunicati-stampa/[node:title]'
+selection_criteria:
+  a2be7be4-a4eb-48be-a951-8233e10588b9:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a2be7be4-a4eb-48be-a951-8233e10588b9
+    context_mapping:
+      node: node
+    bundles:
+      icms_pressrelease: icms_pressrelease
+  d20f0249-0233-4a56-98f9-ae940e179ac5:
+    id: language
+    negate: false
+    uuid: d20f0249-0233-4a56-98f9-ae940e179ac5
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      it: it
+selection_logic: and
+weight: 2
+relationships:
+  'node:langcode:language':
+    label: Language

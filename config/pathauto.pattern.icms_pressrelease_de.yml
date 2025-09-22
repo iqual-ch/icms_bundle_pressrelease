@@ -4,7 +4,7 @@ dependencies:
   module:
     - language
     - node
-id: pressrelease_de
+id: icms_pressrelease_de
 label: 'Press release (DE)'
 type: 'canonical_entities:node'
 pattern: '/pressemitteilungen/[node:title]'
@@ -26,7 +26,7 @@ selection_criteria:
     langcodes:
       de: de
 selection_logic: and
-weight: -10
+weight: 0
 relationships:
   'node:langcode:language':
     label: Language
